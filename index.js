@@ -29,4 +29,27 @@ toolbar.addEventListener('change', e => {
   }
 });
 
+const draw = (e) => {
+  if(!isPainting){
+    return;
+  }
+  ctx.lineWidth = lineWidth;
+}
+  
+
+canvas.addEventListener('mousedown', (e) => {
+  isPainting = true;
+  startX = e.clientX;
+  startY = e.clientY;
+});
+
+canvas.addEventListener('mouseup', e=> {
+  isPainting = false;
+  ctx.stroke();
+  ctx.beginPath();
+});
+
+canvas.addEventListener('mousemove', draw);
+
+  
  
