@@ -34,6 +34,9 @@ const draw = (e) => {
     return;
   }
   ctx.lineWidth = lineWidth;
+  ctx.lineCap = 'round';
+
+  ctx.lineTo(e.clientX - canvasOffsetX, e.clientY);
 }
   
 
