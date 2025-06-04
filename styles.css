@@ -14,10 +14,12 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .container {
   height: 100%;
   display: flex;
 }
+
 #toolbar {
   display: flex;
   flex-direction: column;
@@ -25,15 +27,19 @@ h1 {
   width: 70px;
   background-color: #202020;
 }
-#toolbar * {
+
+#toolbar {
   margin-bottom: 6px;
 }
+
 #toolbar label {
   font-size: 12px;
 }
+
 #toolbar input {
   width: 100%;
 }
+
 #toolbar button {
   background-color: #1565c0;
   border: none;
