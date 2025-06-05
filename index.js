@@ -33,6 +33,7 @@ const draw = (e) => {
   if(!isPainting){
     return;
   }
+  
   ctx.lineWidth = lineWidth;
   ctx.lineCap = 'round';
 
@@ -45,8 +46,6 @@ canvas.addEventListener('mousedown', (e) => {
   isPainting = true;
   startX = e.clientX;
   startY = e.clientY;
-  ctx.beginPath();
-  ctx.moveTo(e.clientX - canvasOffsetX, e.clientY);
 });
 
 canvas.addEventListener('mouseup', e=> {
